@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --bg-color: #f8fafc;
+  --text-color: #0f172a;
+  --card-bg: #ffffff;
+  --border-color: #cbd5e1;
+  --accent-color: #2563eb;
+  --nav-bg: #e2e8f0;
+}
+
+body.dark {
+  --bg-color: #0f172a;
+  --text-color: #f1f5f9;
+  --card-bg: #1e293b;
+  --border-color: #334155;
+  --accent-color: #435367;
+  --nav-bg: #1e293b;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  padding: 20px;
+  transition: background-color 0.25s, color 0.25s;
+}
+
+header {
+  max-width: 900px;
+  margin: 0 auto 30px;
+}
+
+header h1 {
+  margin-bottom: 12px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--nav-bg);
+  padding: 12px 16px;
+  border-radius: 8px;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 16px;
+}
+
+.nav-links a {
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.profile-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.profile-img {
+  width: 180px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 2px solid var(--accent-color);
+}
+
+.cards-row {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 30px;
+}
+
+.card {
+  flex: 1;
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.card h3 {
+  margin-bottom: 8px;
+  color: var(--accent-color);
+}
+
+.form-section {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section h2 {
+  margin-bottom: 12px;
+}
+
+.form-group {
+  margin-bottom: 12px;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 4px;
+  font-weight: bold;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 8px 10px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+}
+
+button {
+  padding: 10px 16px;
+  background-color: var(--accent-color);
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.theme-section {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+footer {
+  max-width: 900px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 16px;
+  border-top: 1px solid var(--border-color);
+  font-size: 0.9rem;
+}
